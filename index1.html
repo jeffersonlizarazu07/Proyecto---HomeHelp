@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHelp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3FFFF; 
+        }
+
+        header {
+            background-color: #004AAD; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #FFFFFF; 
+        }
+
+        nav {
+            background-color: #004AAD; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000; 
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #004AAD; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .reviews {
+            background-color: #FFFFFF; 
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        body::after {
+            content: "";
+            background-image: url('tu_imagen_con_formato_agua.png');
+            opacity: 0.1; 
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color:#ffffff;">HomeHelp</span></h1>
+    </header>
+    <nav>
+        <a href="#usuario">Usuario</a>
+        <a href="#solicitar-servicio">Servicios realizados</a>
+        <a href="#aceptar-servicio">Aceptar Servicio</a>
+        <a href="#reseñas">Reseñas</a>
+    </nav>
+    <section id="usuario">
+        <h2 style="color:#000;">Sección de Usuario</h2>
+    </section>
+    <section id="solicitar-servicio">
+        <h2 style="color:#000;">Solicitar Servicio</h2>
+    </section>
+    <section id="aceptar-servicio">
+        <h2 style="color:#000;">Aceptar Servicio</h2>
+    </section>
+    <section id="reseñas" class="reviews">
+        <h2 style="color:#000;">Reseñas</h2>
+    </section>
+    <footer>
+        <p>&copy; 2023 <span style="color:#FFFFFF;">Homehelp</span></p>
+    </footer>
+</body>
+</html>
