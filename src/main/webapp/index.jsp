@@ -8,6 +8,6 @@
 <c:if test="${not empty message}">
     <p>${message}</p>
 </c:if>
-<a href="form.jsp">Crear Usuario</a>
+<a href="user_registrate.jsp">Crear Usuario</a>
 </body>
 </html>
