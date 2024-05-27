@@ -49,7 +49,102 @@ public class MySQLConnector {
                         System.out.println();
                         System.out.println("Precio del Servicio: " + Precio);
 
+                        /*try {
+            // Conecta a la base de datos
+            conexion = DriverManager.getConnection(url, usuario, contrasena);
 
+            // Prepara el SQL para la inserción
+            String sql = "INSERT INTO reservas (Comentario, Estado, Fecha, ID_Reserva, ID-Usuario, TablaUsuario_ID_Usuario) VALUES (?, ?, ?)";
+            declaracion = conexion.prepareStatement(sql);
+
+            // Establece los valores
+            declaracion.setString(1, "Solicitud de usuario para servicio");
+            declaracion.setString(2, "Procesada");
+            declaracion.setString(3, "2024-05-02);
+            declaracion.setInt(4, 1);
+            declaracion.setInt(5, 1);
+            declaracion.setInt(6, 1);
+
+            // Ejecuta la inserción
+            int filasInsertadas = declaracion.executeUpdate();
+            System.out.println(filasInsertadas + " registro(s) insertado(s)");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Cierra la declaración y la conexión
+            try {
+                if (declaracion != null) declaracion.close();
+                if (conexion != null) conexion.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+                        */
+                        /*
+                          try {
+            // Conecta a la base de datos
+            conexion = DriverManager.getConnection(url, usuario, contrasena);
+
+            // Prepara el SQL para la actualización
+            String sql = "UPDATE usuarios SET correo = ?, edad = ? WHERE nombre = ?";
+            declaracion = conexion.prepareStatement(sql);
+
+            // Establece los valores
+            declaracion.setString(1, "juan.perez@nuevoejemplo.com");
+            declaracion.setInt(2, 31);
+            declaracion.setString(3, "Juan Perez");
+
+            // Ejecuta la actualización
+            int filasActualizadas = declaracion.executeUpdate();
+            System.out.println(filasActualizadas + " registro(s) actualizado(s)");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Cierra la declaración y la conexión
+            try {
+                if (declaracion != null) declaracion.close();
+                if (conexion != null) conexion.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+}
+                         */
+                        /*
+                           try {
+            // Conecta a la base de datos
+            conexion = DriverManager.getConnection(url, usuario, contrasena);
+
+            // Prepara el SQL para la eliminación
+            String sql = "DELETE FROM usuarios WHERE nombre = ?";
+            declaracion = conexion.prepareStatement(sql);
+
+            // Establece el valor del parámetro
+            declaracion.setString(1, "Juan Perez");
+
+            // Ejecuta la eliminación
+            int filasEliminadas = declaracion.executeUpdate();
+            System.out.println(filasEliminadas + " registro(s) eliminado(s)");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Cierra la declaración y la conexión
+            try {
+                if (declaracion != null) declaracion.close();
+                if (conexion != null) conexion.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+                         */
                     }
                 }
             }catch (Exception e) {
